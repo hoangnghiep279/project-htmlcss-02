@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #171100;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 24.5px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.85;
+    padding: 11px 29px;
+}
+
+/* header */
+.header {
+    background: #fffcf4;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    padding: 14px 0;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+.header .nav ul {
+    display: flex;
+    gap: 42px;
+    margin-right: 70px;
+}
+
+.header .nav ul a:hover {
+    font-weight: 600;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+.header .nav ul a {
+    color: #5f5b53;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header .nav ul .active {
+    position: relative;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header .nav ul .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: var(--primary-color);
+}
+.header .action .action-signup {
+    padding: 11px 41px;
+}
+.header .action .action-signup:hover {
+    opacity: 0.9;
+}
+
+/* hero */
+.hero {
+    background: #fffcf4;
+    height: calc(100vh - 75px);
+    padding: 0 0 65px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .img-block .image {
+    margin-top: 72px;
+    display: block;
+    object-fit: cover;
+    height: 685px;
+    width: 470px;
+    border-radius: 20px;
+}
+
+.hero .img-block,
+.hero .info {
+    width: 50%;
+}
+.hero .info {
+    margin-top: 128px;
+}
+.hero .info .title {
+    color: #171100;
+    width: 470px;
+    font-family: "Sen", sans-serif;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.hero .info .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    width: 470px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+.hero .info .cta-group {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
