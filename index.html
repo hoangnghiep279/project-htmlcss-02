@@ -18,9 +18,10 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header">
-            <div class="content">
+        <header class="header fixed">
+            <div class="main-content">
                 <div class="body">
+                    <!-- logo -->
                     <a href="#!">
                         <img
                             src="./assets/img/logo.svg"
@@ -28,10 +29,11 @@
                             class="logo"
                         />
                     </a>
+                    <!-- nav -->
                     <nav class="nav">
                         <ul>
-                            <li>
-                                <a class="active" href="#!">Home</a>
+                            <li class="active">
+                                <a href="#!">Home</a>
                             </li>
                             <li>
                                 <a href="#!">Courses</a>
@@ -44,6 +46,7 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- action -->
                     <div class="action">
                         <a href="#!" class="btn action-signup">Sign Up</a>
                     </div>
@@ -53,18 +56,55 @@
 
         <main>
             <div class="hero">
-                <div class="content">
+                <div class="main-content">
                     <div class="body">
-                        <div class="img-block">
-                            <div class="hero-summary"></div>
+                        <div class="media-block">
+                            <div class="hero-summary">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/hero-media01.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">20 Courses</p>
+                                        <p class="title">UI/UX Design</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/hero-media02.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">20 Courses</p>
+                                        <p class="title">Development</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/hero-media03.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">30 Courses</p>
+                                        <p class="title">Marketing</p>
+                                    </div>
+                                </div>
+                            </div>
                             <img
                                 src="./assets/img/herro.jpg"
                                 alt=""
                                 class="image"
                             />
                         </div>
-                        <div class="info">
-                            <h1 class="title">
+                        <div class="content-block">
+                            <h1 class="heading">
                                 Learn without limits and spread knowledge.
                             </h1>
                             <p class="desc">
@@ -73,21 +113,24 @@
                                 from world-class universities and companies.
                             </p>
                             <div class="cta-group">
-                                <a href="#!" class="btn">See Courses</a>
-                                <div class="watch-video">
-                                    <img
-                                        src="./assets/img/play.svg"
-                                        alt=""
-                                        class="icon"
-                                    />
+                                <a href="#!" class="btn hero-cta"
+                                    >See Courses</a
+                                >
+                                <button class="watch-video">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/play.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                     <span>Watch Video</span>
-                                </div>
+                                </button>
                             </div>
-                            <p class="desc-stats">
-                                Recent engagement
-                                <strong></strong>
+                            <p class="desc">Recent engagement</p>
+                            <p class="desc stats">
+                                <strong>50K</strong>
                                 Students
-                                <strong></strong>
+                                <strong>70+</strong>
                                 Courses
                             </p>
                         </div>
